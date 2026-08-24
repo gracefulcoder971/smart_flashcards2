@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flashcards</title>
+</head>
+<body>
+    <h1>Your Flashcards</h1>
+    <ul>
+        {% for card in cards %}
+            <li><b>{{ card['term'] }}</b>: {{ card['definition'] }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/quiz">Take a Quiz</a>
+</body>
+</html>
